@@ -14,7 +14,7 @@ func main() {
 	http.Handle("/", fileServer)
 	// Define a rota para o formulario
 	http.HandleFunc("/form", formHandler)
-	// Define a rota para a tela de hello
+	// Define a rota para exibir o texto de Hello, world!
 	http.HandleFunc("/hello", helloHandler)
 
 	fmt.Printf("Starting server at port 8080\n")

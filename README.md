@@ -5,9 +5,10 @@ This project is an introducing to the net/http package, is simple little file se
 ## Routes
 
 ```mermaid
-A["Server"] --> B["/hello"] --> C["hello function"]
-A --> D["/form"] --> E["form function"] --> F["form.html"]
-A --> G["/"] --> H["index.html"]
+graph TD;
+Server --> /hello --> hello function;
+Server --> /form --> form function --> form.html;
+Server --> / --> index.html;
 ```
 
 to execute it you must have [**golang**](https://golang.org/)

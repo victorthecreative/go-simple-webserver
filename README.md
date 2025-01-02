@@ -6,9 +6,10 @@ This project is an introducing to the net/http package, is simple little file se
 
 ```mermaid
 graph TD
-    Server --> / --> index.html,
-    Server --> /hello --> hello func,
-    Server --> /form --> form func --> form.html,
+    Server --> "/hello" --> hello func
+    Server --> "/form" --> form func --> formHtml["form.html"]
+    Server --> "/" --> indexHtml["index.html"]
+
 ```
 
 to execute it you must have [**golang**](https://golang.org/)

@@ -11,9 +11,9 @@ graph TD
     Server --> form["/form"] --> formFunction["form func"] --> formHtml["form.html"]
 ```
 
-to execute it you must have [**golang**](https://golang.org/)
+## Run
 
-run
+To execute it you must have [**golang**](https://golang.org/)
 
 ```
 go build

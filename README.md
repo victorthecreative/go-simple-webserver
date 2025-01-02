@@ -5,10 +5,10 @@ This project is an introducing to the net/http package, is simple little file se
 ## Routes
 
 ```mermaid
-graph TD;
-Server --> /hello --> hello function;
-Server --> /form --> form function --> form.html;
-Server --> / --> index.html;
+graph TD
+    Server --> /hello --> helloFunction
+    Server --> /form --> formFunction --> form.html
+    Server --> / --> index.html
 ```
 
 to execute it you must have [**golang**](https://golang.org/)
